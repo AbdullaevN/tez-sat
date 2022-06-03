@@ -5,7 +5,5 @@
     "no-console": "warn",
     "quotes": ["error", "double"],
     "semi": ["error", "always"]
-  },
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true
+  }
 }
