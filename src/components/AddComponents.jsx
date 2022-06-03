@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addUser, deleteUser, updateUsername } from "../features/Users";
+import { addProduct, deleteUser, updateUsername } from "../features/Users";
 
 const AddComponent = () => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const AddComponent = () => {
   return (
     <div className="App">
       {" "}
-      <div className="addUser">
+      <div className="addProduct">
         <input
           type="text"
           placeholder="Name..."
@@ -31,7 +31,7 @@ const AddComponent = () => {
         <button
           onClick={() => {
             dispatch(
-              addUser({
+              addProduct({
                 id: userList[userList.length - 1].id + 1,
                 name,
                 username,
@@ -47,8 +47,13 @@ const AddComponent = () => {
         {userList.map((user) => {
           return (
             <div>
-              <h1> {user.name}</h1>
-              <h1> {user.username}</h1>
+              <span key={user}>{user}</span>
+              <img src={user.photo} alt="" />
+              <h2> {user.price}</h2>
+              <span> {user.description}</span>
+              {/* <h1> {user.name}</h1>
+              <h2> {user.username}</h2> */}
+
               <input
                 type="text"
                 placeholder="New Username..."

@@ -3,6 +3,9 @@
   "rules": {
     // "no-unused-vars": ["warn"],
     "no-console": "warn",
-    "quotes": ["error", "double"]
-  }
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  },
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Category from "../components/Category";
+// import DbStoreProduct from "../components/DbStoreProduct";
 import Footer from "../components/Footer";
 import MyNavbar from "../components/MyNavbar";
 import Search from "../components/Search";
@@ -9,12 +10,13 @@ const MainPage = () => {
   // const x = 1;
   return (
     <div>
+      {/* <h2>Main Page</h2> */}
       <MyNavbar />
       <Search />
       <Category />
       <SectionCard />
       <Footer />
-      <h2>Main Page</h2>
+      {/* <DbStoreProduct /> */}
     </div>
   );
 };

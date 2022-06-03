@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { UsersData } from "../FakeData";
+import { ProductsData } from "../FakeData";
 
-export const userSlice = createSlice({
+export const productSlice = createSlice({
   name: "users",
-  initialState: { value: UsersData },
+  initialState: { value: ProductsData },
   reducers: {
-    addUser: (state, action) => {
+    addProduct: (state, action) => {
       state.value.push(action.payload);
     },
 
@@ -15,6 +15,7 @@ export const userSlice = createSlice({
     },
 
     updateUsername: (state, action) => {
+      // eslint-disable-next-line array-callback-return
       state.value.map((user) => {
         if (user.id === action.payload.id) {
           user.username = action.payload.username;
@@ -24,5 +25,5 @@ export const userSlice = createSlice({
   },
 });
 
-export const { addUser, deleteUser, updateUsername } = userSlice.actions;
-export default userSlice.reducer;
+export const { addProduct, deleteUser, updateUsername } = productSlice.actions;
+export default productSlice.reducer;
