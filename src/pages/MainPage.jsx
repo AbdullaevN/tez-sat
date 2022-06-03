@@ -8,6 +8,7 @@ import SectionCard from "../components/SectionCard";
 
 const MainPage = () => {
   // const x = 1;
+  // COMMENT FOR COMMIT
   return (
     <div>
       {/* <h2>Main Page</h2> */}
