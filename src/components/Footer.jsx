@@ -33,27 +33,27 @@ const Footer = () => {
             <div class="footer__block2">
               <h2 class="footer__title">Services</h2>
               <li class="footer__text">
-                <a class="footer__text_block2" href="#">
+                <a class="footer__text_block2" href="www.google.com">
                   Служба поддержки
                 </a>
               </li>
               <li class="footer__text">
-                <a class="footer__text_block2" href="#">
+                <a class="footer__text_block2" href="www.google.com">
                   Карта сайта
                 </a>
               </li>
               <li class="footer__text">
-                <a class="footer__text_block2" href="#">
+                <a class="footer__text_block2" href="www.google.com">
                   О нас
                 </a>
               </li>
               <li class="footer__text">
-                <a class="footer__text_block2" href="#">
+                <a class="footer__text_block2" href="www.google.com">
                   Помощь
                 </a>
               </li>
               <li class="footer__text">
-                <a class="footer__text_block2" href="#">
+                <a class="footer__text_block2" href="www.google.com">
                   Пользовательские соглашения
                 </a>
               </li>

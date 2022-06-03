@@ -3,7 +3,6 @@
   "rules": {
     // "no-unused-vars": ["warn"],
     "no-console": "warn",
-    "quotes": ["error", "prfer-double"],
-    "jsx-quotes": ["error", "prefer-double"]
+    "quotes": ["error", "double"]
   }
 }

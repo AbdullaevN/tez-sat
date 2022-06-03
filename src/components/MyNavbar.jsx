@@ -12,19 +12,19 @@ const MyNavbar = () => {
           <div className="nav__wrap">
             <ul className="nav__list">
               <li>
-                <a href="">Для бизнеса </a>
+                <a href="www.google.com">Для бизнеса </a>
               </li>
 
               <li>
-                <a href="">Блог</a>
+                <a href="www.google.com">Блог</a>
               </li>
 
               <li>
-                <a href="">О нас</a>
+                <a href="www.google.com">О нас</a>
               </li>
 
               <li>
-                <a href="">Помощь</a>
+                <a href="www.google.com">Помощь</a>
               </li>
             </ul>
           </div>
@@ -32,13 +32,13 @@ const MyNavbar = () => {
         <div className="header__auth">
           <ul className="header__auth__list">
             <li>
-              <a href="">Ru</a>
+              <a href="www.google.com">Ru</a>
             </li>
             <li>
-              <a href="">Войти</a>
+              <a href="www.google.com">Войти</a>
             </li>
             <li>
-              <a href="">Регистрация</a>
+              <a href="www.google.com">Регистрация</a>
             </li>
           </ul>
         </div>
