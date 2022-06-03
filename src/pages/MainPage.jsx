@@ -12,8 +12,8 @@ const MainPage = () => {
       <MyNavbar />
       <Search />
       <Category />
-      <Footer />
       <SectionCard />
+      <Footer />
       <h2>Main Page</h2>
     </div>
   );
