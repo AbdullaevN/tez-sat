@@ -47,7 +47,7 @@ const AddComponent = () => {
         {userList.map((user) => {
           return (
             <div>
-              <span key={user}>{user}</span>
+              {/* <span key={user}>{user}</span> */}
               <img src={user.photo} alt="" />
               <h2> {user.price}</h2>
               <span> {user.description}</span>
