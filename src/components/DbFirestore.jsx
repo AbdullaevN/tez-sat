@@ -39,6 +39,7 @@ const DbFirestore = () => {
   });
   return (
     <div className="App">
+      <h2>create with firestore</h2>
       <input
         type="text"
         placeholder="Name..."
@@ -48,24 +49,24 @@ const DbFirestore = () => {
       />
       <input
         type="number"
-        placeholder="Age..."
+        placeholder="Price..."
         onChange={(e) => {
           setNewAge(e.target.value);
         }}
       />
-      <button onClick={createUser}>Create user</button>
+      <button onClick={createUser}>Create product</button>
       {users.map((user) => {
         return (
           <div>
             {" "}
             <h1>Name: {user.name}</h1>
-            <h2>Name: {user.age}</h2>
+            <h2>Price: {user.age}</h2>
             <button
               onClick={() => {
                 updateUser(user.id, user.age);
               }}
             >
-              Increase Age
+              Increase Price
             </button>
             <button
               onClick={() => {

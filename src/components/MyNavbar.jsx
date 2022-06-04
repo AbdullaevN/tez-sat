@@ -8,10 +8,12 @@ const MyNavbar = () => {
       <header className="header container">
         <div className="nav">
           <div className="nav__logo">
-            <img src={logo} alt="" />
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </div>
           <div className="nav__wrap">
-            <ul className="nav__list">
+            <ul className="nav__list" id="nav">
               <li>
                 <a href="www.google.com">Для бизнеса </a>
               </li>
@@ -37,7 +39,7 @@ const MyNavbar = () => {
             </li>
             <li>
               <Link to={"/sigin"}>
-                <button>Войти</button>
+                <button style={{ border: "0" }}>Войти</button>
               </Link>
             </li>
             <li>
@@ -45,42 +47,6 @@ const MyNavbar = () => {
             </li>
           </ul>
         </div>
-        {/* <div className="row-wrap">
-            <div className="logo-wrap">
-              <span className="logo">LOGO</span>
-            </div>
-            <div className="nav-wrap">
-              <ul className="nav-list">
-                <li className="active">
-                  <a href="#">About-us</a>
-                </li>
-                <li>
-                  <a href="#">Contact-us</a>
-                </li>
-                <li className="with-submenu">
-                  <a href="#">Blog</a>
-                  <div className="submenu">
-                    <ul className="submenu-inner">
-                      <li>
-                        <a href="#">Link1</a>
-                      </li>
-                      <li>
-                        <a href="#">Link2</a>
-                      </li>
-                      <li>
-                        <a href="#">Link3</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="hamburger">
-              <span className="line"></span>
-              <span className="line"></span>
-              <span className="line"></span>
-            </div>
-          </div> */}
       </header>
     </>
   );

@@ -10,7 +10,7 @@ const MyRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/*" element={<MainPage />} />
         <Route path="/crud" element={<CrudPage />} />
         <Route path="/add" element={<AddPage />} />
         {/* <Route path="/login" element={<LoginPage />} />

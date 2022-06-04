@@ -1,20 +1,22 @@
 import React from "react";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct, deleteUser, updateUsername } from "../features/Users";
+import { addProduct, deleteUser } from "../features/Users";
 
 const AddComponent = () => {
   const dispatch = useDispatch();
   const userList = useSelector((state) => state.users.value);
 
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
-  const [newUsername, setNewUsername] = useState("");
+  //   const [name, setName] = useState("");
+  //   const [username, setUsername] = useState("");
+  const [description, setDescription] = useState("");
+  const [price, setPrice] = useState("");
+  const [photo, setPhoto] = useState("");
   return (
     <div className="App">
-      {" "}
+      <h2>create with redux</h2>{" "}
       <div className="addProduct">
-        <input
+        {/* <input
           type="text"
           placeholder="Name..."
           onChange={(event) => {
@@ -27,50 +29,53 @@ const AddComponent = () => {
           onChange={(event) => {
             setUsername(event.target.value);
           }}
+        /> */}
+        <input
+          type="text"
+          placeholder="Description..."
+          onChange={(event) => {
+            setDescription(event.target.value);
+          }}
+        />
+        <input
+          type="text"
+          placeholder="Price..."
+          onChange={(event) => {
+            setPrice(event.target.value);
+          }}
+        />
+        <input
+          type="text"
+          placeholder="Photo..."
+          onChange={(event) => {
+            setPhoto(event.target.value);
+          }}
         />
         <button
           onClick={() => {
             dispatch(
               addProduct({
                 id: userList[userList.length - 1].id + 1,
-                name,
-                username,
+
+                description,
+                price,
+                photo,
               })
             );
           }}
         >
           {" "}
-          Add User
+          Add Product
         </button>
       </div>
       <div className="displayUsers">
         {userList.map((user) => {
           return (
             <div>
-              {/* <span key={user}>{user}</span> */}
               <img src={user.photo} alt="" />
               <h2> {user.price}</h2>
               <span> {user.description}</span>
-              {/* <h1> {user.name}</h1>
-              <h2> {user.username}</h2> */}
 
-              <input
-                type="text"
-                placeholder="New Username..."
-                onChange={(event) => {
-                  setNewUsername(event.target.value);
-                }}
-              />
-              <button
-                onClick={() => {
-                  dispatch(
-                    updateUsername({ id: user.id, username: newUsername })
-                  );
-                }}
-              >
-                {" "}
-                Update Username
-              </button>
               <button
                 onClick={() => {
                   dispatch(deleteUser({ id: user.id }));

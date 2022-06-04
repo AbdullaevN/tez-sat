@@ -2,6 +2,8 @@ import React from "react";
 import google from "../assets/Group.svg";
 import appstore from "../assets/appstore.svg";
 import social from "../assets/Group-footer.svg";
+import { Link } from "react-router-dom";
+import logo from "../assets/web.svg";
 
 const Footer = () => {
   return (
@@ -18,7 +20,11 @@ const Footer = () => {
                 услуг. Продажа авто, домов, квартир, электроники, поиск работы и
                 услуг является неотъемлемой частью повседневного бытия.
               </p>
-              <p>Copyright 2018 CloudBudget</p>
+              <div className="nav__logo">
+                <Link to="/">
+                  <img src={logo} alt="" />
+                </Link>
+              </div>
             </div>
             <div className="footer__block2">
               <h2 className="footer__title">Services</h2>

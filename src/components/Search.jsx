@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Search = () => {
   return (
@@ -7,7 +8,9 @@ const Search = () => {
         <input type="search" name="q" placeholder="Поиск..." />
         <input type="submit" value="Найти" />
       </div>
-      <button className="search-section_ad">Подать объявление</button>
+      <Link to="/crud" className="search-section_ad">
+        <button className="search-section_ad">Подать объявление</button>
+      </Link>
     </div>
   );
 };
