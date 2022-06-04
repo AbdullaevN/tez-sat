@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/web.svg";
 
 const MyNavbar = () => {
@@ -35,7 +36,9 @@ const MyNavbar = () => {
               <a href="www.google.com">Ru</a>
             </li>
             <li>
-              <a href="www.google.com">Войти</a>
+              <Link to={"/sigin"}>
+                <button>Войти</button>
+              </Link>
             </li>
             <li>
               <a href="www.google.com">Регистрация</a>

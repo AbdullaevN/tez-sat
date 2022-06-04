@@ -1,14 +1,18 @@
 import React from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, Form, ListGroup, ListGroupItem } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const SectionCard = () => {
   const productList = useSelector((state) => state.users.value);
   return (
     <div className="container section-card">
-      <div>
+      <div className="section-card-wrap">
         <h3>Новые объявления</h3>
-        <input type="checkbox" name="" id="" />
+        <Form.Check
+          type="switch"
+          id="custom-switch"
+          label="Check this switch"
+        />
       </div>
 
       <div className="cards">

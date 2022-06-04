@@ -175,6 +175,10 @@ input[type="submit"] {
   justify-content: center;
   flex-direction: column;
 }
+.section-card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
 .cards {
   display: flex;
   justify-content: space-between;
