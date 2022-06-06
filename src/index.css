@@ -402,6 +402,49 @@ nav .menu.active span:nth-child(2) {
 
 /*  */
 @media (max-width: 767px) {
+  .container {
+    min-width: 390px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-main {
+    display: flex;
+  }
+  .cards {
+    margin: 16px 56px;
+  }
+  .category-section {
+    width: 390px;
+  }
+
+  .category-section-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-section-wrap div {
+    margin: 20px;
+  }
+  .electronika span,
+  .nedvijimost span,
+  .transport span,
+  .clothes span,
+  .home span {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    position: relative;
+    color: #000000;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+
   nav .menu {
     display: flex;
   }
@@ -474,6 +517,15 @@ nav .menu.active span:nth-child(2) {
     font-weight: bold;
   }
 
+  .section-card-wrap {
+    display: flex;
+    width: 257px;
+  }
+
+  .footer__about {
+    display: flex;
+    flex-direction: column;
+  }
   /*  */
 
   /*  */

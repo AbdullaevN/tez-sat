@@ -18,35 +18,39 @@ const SectionCard = () => {
               label="Check this switch"
             />
           </div>
+          <div className="card-main">
+            <div className="cards">
+              {productList.map((product) => {
+                return (
+                  <Card style={{ width: "16rem", margin: " 0 5px 15px 0" }}>
+                    <Card.Img variant="top" src={product.photo} />
+                    <Card.Body
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Card.Title>{product.price}</Card.Title>
+                      <Card.Title>
+                        <img src={like} alt="" />
+                      </Card.Title>
+                    </Card.Body>
+                    <Card.Body>
+                      <Card.Text>{product.description}</Card.Text>
+                    </Card.Body>
 
-          <div className="cards">
-            {productList.map((product) => {
-              return (
-                <Card style={{ width: "16rem", margin: " 0 5px 15px 0" }}>
-                  <Card.Img variant="top" src={product.photo} />
-                  <Card.Body
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <Card.Title>{product.price}</Card.Title>
-                    <Card.Title>
-                      <img src={like} alt="" />
-                    </Card.Title>
-                  </Card.Body>
-                  <Card.Body>
-                    <Card.Text>{product.description}</Card.Text>
-                  </Card.Body>
-
-                  <Card.Body>
-                    <Card.Link href="#">
-                      <img src={map} alt="" />
-                    </Card.Link>
-                    <Card.Link style={{ fontSize: "12px" }} href="#">
-                      г. Бишкек, Чуйская область
-                    </Card.Link>
-                  </Card.Body>
-                </Card>
-              );
-            })}
+                    <Card.Body>
+                      <Card.Link href="#">
+                        <img src={map} alt="" />
+                      </Card.Link>
+                      <Card.Link style={{ fontSize: "12px" }} href="#">
+                        г. Бишкек, Чуйская область
+                      </Card.Link>
+                    </Card.Body>
+                  </Card>
+                );
+              })}
+            </div>
           </div>
         </div>
       ) : (
